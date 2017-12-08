@@ -1,0 +1,1 @@
+.scrollblur-overlay{height:100%;width:100%;position:fixed;z-index:1001;left:0;top:0;background-color:rgba(255,255,255,.5);overflow-x:hidden;visibility:hidden;opacity:0;transition:visibility .3s,opacity .3s linear;background-blend-mode:color-dodge}.scrollblur-overlay.scrollblur-active{visibility:visible;opacity:1}body.scrollblur-blur{filter:blur(3px) grayscale(66%)}
