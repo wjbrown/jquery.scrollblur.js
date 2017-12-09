@@ -21,3 +21,12 @@
 body.scrollblur-blur {
     filter: blur(3px) grayscale(66%);
 }
+
+/* Dark Theme Styles
+.scrollblur-overlay {
+    background-color: rgba(0, 12, 24, 0.6);
+}
+body.scrollblur-blur {
+    filter: blur(3px) grayscale(66%);
+}
+*/

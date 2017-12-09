@@ -7,8 +7,7 @@ module.exports = function(grunt) {
             target: {
                 files: [{
                     expand: true,
-                    // cwd   : 'dist/css',
-                    src   : ['css/*.css', 'css/!*.min.css'],
+                    src   : ['src/css/*.css', 'src/css/!*.min.css'],
                     dest  : 'dist/',
                     ext   : '.min.css',
                     extDot: 'last'
@@ -20,19 +19,19 @@ module.exports = function(grunt) {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
             build: {
-                src : 'src/<%= pkg.name %>.js',
+                src : 'src/js/<%= pkg.name %>.js',
                 dest: 'dist/js/<%= pkg.name %>.min.js'
             }
         },
         jshint: {
-            all: ['Gruntfile.js', 'src/**/*.js'],
+            all: ['Gruntfile.js', 'src/js/**/*.js'],
             options: {
                 // ignore defensive semicolon
                 "-W032": true
             }
         },
         jscs: {
-            src: "src/*.js",
+            src: "src/js/*.js",
             options: {
                 config            : ".jscs",
                 esnext            : false,
